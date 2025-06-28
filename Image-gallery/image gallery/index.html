@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css" id="dark-mode-style" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Image Gallery</h1>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle" class="toggle-checkbox">
+                <label for="dark-mode-toggle" class="toggle-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="gallery-grid">
+            <div class="gallery-item" data-index="0">
+                <img src="./img/nature1.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 1</div>
+            </div>
+            <div class="gallery-item" data-index="1">
+                <img src="./img/nature2.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 2</div>
+            </div>
+            <div class="gallery-item" data-index="2">
+                <img src="./img/nature3.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 3</div>
+            </div>
+            <div class="gallery-item" data-index="3">
+                <img src="./img/nature4.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 4</div>
+            </div>
+            <div class="gallery-item" data-index="4">
+                <img src="./img/nature5.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 5</div>
+            </div>
+            <div class="gallery-item" data-index="5">
+                <img src="./img/nature1.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 6</div>
+            </div>
+            <div class="gallery-item" data-index="6">
+                <img src="./img/nature2.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 7</div>
+            </div>
+            <div class="gallery-item" data-index="7">
+                <img src="./img/nature3.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 8</div>
+            </div>
+            <div class="gallery-item" data-index="8">
+                <img src="./img/nature4.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 9</div>
+            </div>
+            <div class="gallery-item" data-index="9">
+                <img src="./img/nature5.jpg" alt="nature" class="gallery-image">
+                <div class="image-title">Nature 10</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <div class="image-caption" id="imageCaption"></div>
+        </div>
+        <a class="modal-nav modal-prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="modal-nav modal-next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/dark-mode.js"></script>
+</body>
+
+</html>

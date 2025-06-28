@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #1A1A1A;
+    --secondary-color: #5d6267;
+    --text-color: #ecf0f1;
+    --bg-color: #121212;
+    --card-bg: #1E1E1E;
+    --border-color: #2c3e50;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.gallery-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+header {
+    background-color: var(--primary-color);
+}
